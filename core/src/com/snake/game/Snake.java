@@ -89,9 +89,9 @@ public class Snake extends ApplicationAdapter {
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT))
             snakeHead.x += 200 * Gdx.graphics.getDeltaTime();
         if (Gdx.input.isKeyPressed(Input.Keys.DOWN))
-            snakeHead.x -= 200 * Gdx.graphics.getDeltaTime();
+            snakeHead.y -= 200 * Gdx.graphics.getDeltaTime();
         if (Gdx.input.isKeyPressed(Input.Keys.UP))
-            snakeHead.x += 200 * Gdx.graphics.getDeltaTime();
+            snakeHead.y += 200 * Gdx.graphics.getDeltaTime();
 
         // place snakehead between screen limits
         if (snakeHead.x < 0) snakeHead.x = 0;
